@@ -4,7 +4,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'venta_ropa',
+    database: 'venta_ropa',//Cambio de base de datos por otra si no vale la que teniamos
     port: '3306'//cambio de puerto al que tienen
 });
 
