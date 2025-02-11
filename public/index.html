@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <!-- Sección de productos -->
+        <div class="seccion-productos">
+            <h1>Productos</h1>
+            <div id="productos-container" class="grid-productos"></div>
+        </div>
+
+        <!-- Sección de formularios -->
+        <div class="seccion-formularios">
+            <div class="formulario">
+                <h2>Agregar Producto</h2>
+                <form id="form-agregar">
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <input type="text" id="descripcion" placeholder="Descripción">
+                    <input type="number" id="precio" placeholder="Precio" required>
+                    <input type="text" id="talla" placeholder="Talla">
+                    <input type="text" id="color" placeholder="Color">
+                    <input type="number" id="stock" placeholder="Stock" required>
+                    <button type="submit">Agregar</button>
+                </form>
+            </div>
+
+            <!-- Formulario de edición (oculto inicialmente) -->
+            <div id="form-editar-container" class="formulario" style="display: none;">
+                <h2>Editar Producto</h2>
+                <form id="form-editar">
+                    <input type="hidden" id="editar-id">
+                    <input type="text" id="editar-nombre" placeholder="Nombre" required>
+                    <input type="text" id="editar-descripcion" placeholder="Descripción">
+                    <input type="number" id="editar-precio" placeholder="Precio" required>
+                    <input type="text" id="editar-talla" placeholder="Talla">
+                    <input type="text" id="editar-color" placeholder="Color">
+                    <input type="number" id="editar-stock" placeholder="Stock" required>
+                    <button type="submit">Guardar Cambios</button>
+                    <button type="button" onclick="cancelarEdicion()">Cancelar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
