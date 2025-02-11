@@ -1,0 +1,22 @@
+{
+  "name": "api-crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
