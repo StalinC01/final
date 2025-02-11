@@ -5,7 +5,7 @@ const db = mysql.createConnection({
     user: 'root',
     password: '',
     database: 'venta_ropa',
-    port: '3306'
+    port: '3306'//cambio de puerto al que tienen
 });
 
 db.connect((err) => {
