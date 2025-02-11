@@ -31,5 +31,4 @@ const Producto = {
         db.query(sql, [id], callback);
     },
 };
-
 module.exports = Producto;
