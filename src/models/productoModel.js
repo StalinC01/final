@@ -25,7 +25,7 @@ const Producto = {
         const sql = 'UPDATE productos SET nombre = IFNULL(?, nombre), descripcion = IFNULL(?, descripcion), precio = IFNULL(?, precio), talla = IFNULL(?, talla), color = IFNULL(?, color), stock = IFNULL(?, stock) WHERE id = ?';
         db.query(sql, [producto.nombre, producto.descripcion, producto.precio, producto.talla, producto.color, producto.stock, id], callback);
     },
-
+//eliminacion de productos
     eliminar: (id, callback) => {
         const sql = 'DELETE FROM productos WHERE id = ?';
         db.query(sql, [id], callback);
