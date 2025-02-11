@@ -5,7 +5,7 @@ const db = mysql.createConnection({
     user: 'root',
     password: '',
     database: 'venta_ropa',
-    port: '3307' //base de datos puerto correspondiente no funsiona el 3306
+    port: '3307'
 });
 
 db.connect((err) => {
