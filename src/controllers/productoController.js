@@ -10,7 +10,7 @@ const ProductoController = {
             }
         });
     },
-
+//social
     obtenerProductoPorId: (req, res) => {
         const { id } = req.params;
         Producto.obtenerPorId(id, (err, result) => {
